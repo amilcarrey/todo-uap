@@ -63,7 +63,7 @@ function App() {
               {tasks
                 ? tasks.map((task) => (
                     <li
-                      className={task.state ? "text-white/20" : "text-black"}
+                      className={task.state ? "text-white/20" : "text-white"}
                       key={task.id}
                     >
                       <label>
@@ -71,7 +71,7 @@ function App() {
                           type="checkbox"
                           checked={task.state}
                           defaultChecked={false}
-                          onClick={(e) => {
+                          onClick={() => {
                             toggleStatus(task.id);
                           }}
                         />
