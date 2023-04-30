@@ -71,7 +71,7 @@ function App() {
                           type="checkbox"
                           checked={task.state}
                           defaultChecked={false}
-                          onClick={(e) => {
+                          onClick={() => {
                             toggleStatus(task.id);
                           }}
                         />
